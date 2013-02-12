@@ -5,12 +5,12 @@ require 'comunas-de-chile/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "comunas-de-chile"
-  gem.version       = Comunas::De::Chile::VERSION
+  gem.version       = Chile::Comunas::VERSION
   gem.authors       = ["Gonzalo Bulnes Guilpain"]
   gem.email         = ["gon.bulnes@gmail.com"]
   gem.description   = %q{A flat table of the Chilean cities for Rails}
   gem.summary       = %q{Provides generators and data to work with Chilean cities in Rails.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/gonzalo-bulnes/comunas-de-chile"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
