@@ -31,7 +31,7 @@ Comuna.find_or_create_by_name!(name: "Tierra Amarilla", code: "03103", provincia
 Comuna.find_or_create_by_name!(name: "Chañaral", code: "03201", provincia: "Chañaral", region: "Atacama", region_number: "III")
 Comuna.find_or_create_by_name!(name: "Diego de Almagro", code: "03202", provincia: "Chañaral", region: "Atacama", region_number: "III")
 Comuna.find_or_create_by_name!(name: "Vallenar", code: "03301", provincia: "Huasco", region: "Atacama", region_number: "III")
-Comuna.find_or_create_by_name!(name: "Alto del Carmen", code:"03302", provincia: "Huasco", region: "Atacama", region_number: "III")
+Comuna.find_or_create_by_name!(name: "Alto del Carmen", code: "03302", provincia: "Huasco", region: "Atacama", region_number: "III")
 Comuna.find_or_create_by_name!(name: "Freirina", code: "03303", provincia: "Huasco", region: "Atacama", region_number: "III")
 Comuna.find_or_create_by_name!(name: "Huasco", code: "03304", provincia: "Huasco", region: "Atacama", region_number: "III")
 Comuna.find_or_create_by_name!(name: "La Serena", code: "04101", provincia: "Elqui", region: "Coquimbo", region_number: "IV")
