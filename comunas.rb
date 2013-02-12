@@ -2,7 +2,7 @@
 
 # Comunas de Chile
 # See http://www.subdere.gov.cl/documentacion/regiones-provincias-y-comunas-de-chile
-# Last modified: 2012-12-26
+# Last modified: 2013-02-12
 #
 # Note: the 'ciudad' is not an administrative division, yet is widely used by people.
 #
@@ -236,18 +236,18 @@ Comuna.find_or_create_by_name({name: "Purén", code: "09208", provincia: "Mallec
 Comuna.find_or_create_by_name({name: "Renaico", code: "09209", provincia: "Malleco", region: "Región de la Araucanía", region_number: "IX")
 Comuna.find_or_create_by_name({name: "Traiguén", code: "09210", provincia: "Malleco", region: "Región de la Araucanía", region_number: "IX")
 Comuna.find_or_create_by_name({name: "Victoria", code: "09211", provincia: "Malleco", region: "Región de la Araucanía", region_number: "IX")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
-#Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
+Comuna.find_or_create_by_name({name: "Valdivia", code: "14101", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Corral", code: "14102", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Lanco", code: "14103", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Los Lagos", code: "14104", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Máfil", code: "14105", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Mariquina", code: "14106", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Paillaco", code: "14107", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "Panguipulli", code: "14108", provincia: "Valdivia", region: "Región de los Ríos", region_number: "XIV")
+Comuna.find_or_create_by_name({name: "La Unión", code: "14201", provincia: "Ranco", region: "Región de los Ríos", region_number: "XIV"
+Comuna.find_or_create_by_name({name: "Futrono", code: "14201", provincia: "Ranco", region: "Región de los Ríos", region_number: "XIV"
+Comuna.find_or_create_by_name({name: "Lago Ranco", code: "14201", provincia: "Ranco", region: "Región de los Ríos", region_number: "XIV"
+Comuna.find_or_create_by_name({name: "Río Bueno", code: "14201", provincia: "Ranco", region: "Región de los Ríos", region_number: "XIV"
 #Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
 #Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
 #Comuna.find_or_create_by_name({name: "", code: "", provincia: "", region: "", region_number: "")
