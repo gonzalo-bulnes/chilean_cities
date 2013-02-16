@@ -1,6 +1,8 @@
 Comunas de Chile
 ================
 
+[![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
+
 A flat table of the Chilean _comunas_ as described by the [SUBDERE][subdere].
 
   [subdere]: http://www.subdere.gov.cl

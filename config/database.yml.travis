@@ -1,0 +1,9 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: chilean_cities
+  pool: 5
+  username: postgres
+  password:
+
+# see .travis.yml
