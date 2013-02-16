@@ -32,9 +32,16 @@ Add the gem to your Gemfile:
 
     gem 'chilean_cities', git: 'git@github.com:gonzalo-bulnes/chilean_cities.git'
 
-Generate the seed and run it:
+Then copy the migrations to your application and apply them:
 
-    rails generate chilean_cities:install
+    rake chilean_cities:install:migrations
+    rake db:migrate
+
+Add the line `# Load the chilean cities here please` in `db/seeds.rb` if
+your application has one. (If it doesn't, the generator will create one.)
+Finally, generate the seed and run it:
+
+    rails generate chilean_cities:seeds
     bundle exec rake db:seed
 
 License
