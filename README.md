@@ -30,9 +30,9 @@ Usage
 
 Add the gem to your Gemfile:
 
-    gem 'comunas-de-chile', git: 'git@github.com:gonzalo-bulnes/comunas-de-chile.git'
+    gem 'chilean_cities', git: 'git@github.com:gonzalo-bulnes/chilean_cities.git'
 
-Generate the migration and run it:
+Generate the seed and run it:
 
-    rails generate comunas_de_chile:install
-    bundle exec rake db:migrate
+    rails generate chilean_cities:install
+    bundle exec rake db:seed
