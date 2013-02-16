@@ -47,6 +47,13 @@ Finally, generate the seed and run it:
     rails generate chilean_cities:seeds
     bundle exec rake db:seed
 
+Credits
+-------
+
+Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs][1]. Thanks for that!
+
+  [1]: https://github.com/acidlabs
+
 License
 -------
 
