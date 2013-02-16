@@ -2,6 +2,7 @@ Comunas de Chile
 ================
 
 [![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
+[![Code Climate](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities.png)](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities)
 
 A flat table of the Chilean _comunas_ as described by the [SUBDERE][subdere].
 
