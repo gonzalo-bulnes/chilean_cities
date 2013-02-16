@@ -24,4 +24,10 @@ describe ChileanCities::Comuna do
   it "regions should have as number" do
     should respond_to :region_number
   end
+
+  # validations
+
+  it "should have a valid factory" do
+    FactoryGirl.build(:comuna).should be_valid
+  end
 end
