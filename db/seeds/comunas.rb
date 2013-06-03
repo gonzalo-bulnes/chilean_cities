@@ -6,6 +6,7 @@
 #
 # Note: the 'ciudad' is not an administrative division, yet is widely used by people.
 #
+ChileanCities::Comuna.find_or_create_by_name(name: "Arica", code: "15101", provincia: "Arica", region: "Arica y Parinacota", region_number: "XV")
 ChileanCities::Comuna.find_or_create_by_name(name: "Camarones", code: "15102", provincia: "Arica", region: "Arica y Parinacota", region_number: "XV")
 ChileanCities::Comuna.find_or_create_by_name(name: "Putre", code: "15201", provincia: "Parinacota", region: "Arica y Parinacota", region_number: "XV")
 ChileanCities::Comuna.find_or_create_by_name(name: "General Lagos", code: "15202", provincia: "Parinacota", region: "Arica y Parinacota", region_number: "XV")
