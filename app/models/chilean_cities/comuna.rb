@@ -19,7 +19,7 @@ module ChileanCities
     end
 
     if methods.exclude?(:find_or_create_by_name)
-      def find_or_create_by_name(attributes)
+      def self.find_or_create_by_name(attributes)
         find_or_create_by(attributes.fetch(:name)) do |comuna|
           comuna.assign_attributes(attributes.except(:name))
         end
