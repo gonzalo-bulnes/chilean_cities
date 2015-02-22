@@ -1,6 +1,4 @@
-require "chilean_cities/version"
-require "chilean_cities/engine"
+require 'chilean_cities/version'
 
-module ChileanCities
-  # Your code goes here...
-end
+module ChileanCities; end
+
