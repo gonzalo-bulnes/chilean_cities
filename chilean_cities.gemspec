@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Gonzalo Bulnes Guilpain"]
   gem.email         = ["gon.bulnes@gmail.com"]
   gem.description   = %q{A ruby implementation of the Chilean 'comunas'.}
-  gem.summary       = %q{Provides a flat table of the Chilean 'comunas'
+  gem.summary       = %q{Provides a Ruby representation of the Chilean 'comunas'
                          as described by the Subsecretaría de Desarrollo Regional
                          y Administrativo.}
   gem.homepage      = "https://github.com/gonzalo-bulnes/chilean_cities"
