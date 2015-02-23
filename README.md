@@ -41,6 +41,21 @@ Add the gem to your Gemfile:
 > I'm not sure yet how the collection of administrative areas will be created and/or persisted.
 > However, I'm thinking that creating a collection of `save`able objects from a source file and providing helpers to persist them would be a way to keep the data accessible (readable and auditable).
 
+See Also
+--------
+
+- [ISO 3166-2][iso]
+- Comunas de Chile ([gist][json]) (a Ruby on Rails seed and a JSON document)
+- the Schema.org [AdministrativeArea schema][schema]
+- an interesting overview of [how the administrative areas can be categorized for mapping][administrative_mapping]
+- the [OpenStreetMap relations][osm_boundaries] corresponding to the described administrative areas
+
+  [iso]: https://en.wikipedia.org/wiki/ISO_3166-2:CL
+  [json]: https://gist.github.com/gonzalo-bulnes/337ea1e916e3890fdefa
+  [schema]: http://schema.org/AdministrativeArea
+  [administrative_mapping]: http://wiki.openstreetmap.org/wiki/Tag:admin%20level=8?uselang=en-US
+  [osm_boundaries]: http://www.openstreetmap.org/relation/164609
+
 Credits
 -------
 
