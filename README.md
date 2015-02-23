@@ -19,7 +19,7 @@ This library is not developed, supported nor endorsed in any way by the Chilean 
 Data Sources
 ------------
 
-This library is based on the publicly available information from the SUBDERE related to the [Codificación Única Territorial][source]. The sources quoted by [the document on which this library is based][1] are:
+This library is based on the publicly available information from the SUBDERE related to the [Codificación Única Territorial][source]. The sources quoted by [the document on which this library is based][ref] are:
 
 - Decreto Supremo No 1439, del Ministerio del Interior, publicado en el Diario Oficial del 8 de Mayo de 2000
 - Decreto Supremo No 1352, del Ministerio del Interior, publicado en el Diario Oficial del 23 de Agosto de 2008
@@ -27,7 +27,7 @@ This library is based on the publicly available information from the SUBDERE rel
 - Decreto Exento No 817, del Ministerio del Interior, publicado en el Diario Oficial del 26 de Marzo de 2010
 
   [source]: http://www.subdere.gov.cl/documentacion/regiones-provincias-y-comunas-de-chile
-  [1]: http://www.subdere.gov.cl/sites/default/files/documentos/articles-73111_recurso_2.pdf
+  [ref]: http://www.subdere.gov.cl/sites/default/files/documentos/articles-73111_recurso_2.pdf
 
 
 Usage
@@ -35,26 +35,18 @@ Usage
 
 Add the gem to your Gemfile:
 
-    gem 'chilean_cities', git: 'git@github.com:gonzalo-bulnes/chilean_cities.git'
+    gem 'chilean_cities', '~> 1.0' # see semver.org
 
-Then copy the migrations to your application and apply them:
 
-    rake chilean_cities:install:migrations
-    rake db:migrate
-
-Add the line `# Load the chilean cities here please` in `db/seeds.rb` if
-your application has one. (If it doesn't, the generator will create one.)
-Finally, generate the seed and run it:
-
-    rails generate chilean_cities:seeds
-    bundle exec rake db:seed
+> I'm not sure yet how the collection of administrative areas will be created and/or persisted.
+> However, I'm thinking that creating a collection of `save`able objects from a source file and providing helpers to persist them would be a way to keep the data accessible (readable and auditable).
 
 Credits
 -------
 
-Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs][1]. Thanks for that!
+Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs][acidlabs]. Thanks for that!
 
-  [1]: https://github.com/acidlabs
+  [acidlabs]: https://github.com/acidlabs
 
 License
 -------
