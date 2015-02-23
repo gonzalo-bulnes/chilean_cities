@@ -5,6 +5,6 @@ RSpec.shared_examples 'a list of ChileanCities::Provincia' do
   it_behaves_like 'a list of ChileanCities::Comuna'
 
   it 'responds to :provincias', public: true do
-    expect(comunas_list).to respond_to :provincias
+    expect(provincias_list).to respond_to :provincias
   end
 end
