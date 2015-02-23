@@ -3,8 +3,10 @@ Comunas de Chile
 
 [![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
 [![Code Climate](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities.png)](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities)
+[![Dependency Status](https://gemnasium.com/gonzalo-bulnes/chilean_cities.svg)](https://gemnasium.com/gonzalo-bulnes/chilean_cities)
+[![Inline docs](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities.svg?branch=master)](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities)
 
-A flat table of the Chilean _comunas_ as described by the [SUBDERE][subdere].
+A Ruby representation of the Chilean _comunas_ as described by the [SUBDERE][subdere].
 
   [subdere]: http://www.subdere.gov.cl
 
@@ -57,8 +59,8 @@ Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs]
 License
 -------
 
-    ChileanCities provides a Ruby implementation of the Chilean _comunas_.
-    Copyright (C) 2013  Gonzalo Bulnes Guilpain
+    ChileanCities provides a Ruby representation of the Chilean _comunas_.
+    Copyright (C) 2013, 2014, 2015  Gonzalo Bulnes Guilpain
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

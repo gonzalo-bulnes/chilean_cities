@@ -1,23 +1,43 @@
-#!/usr/bin/env rake
-begin
-  require 'bundler/setup'
-  require 'bundler/gem_tasks'
-
-rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
-end
-
-APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
-load 'rails/tasks/engine.rake'
-
-Bundler::GemHelper.install_tasks
-
-Dir[File.join(File.dirname(__FILE__), 'tasks/**/*.rake')].each { |f| load f }
-
-require 'rspec/core'
 require 'rspec/core/rake_task'
 
-desc "Run all specs in spec directory (excluding plugin specs)"
-RSpec::Core::RakeTask.new(:spec => 'app:db:test:prepare')
+begin
+  require 'rspec/core/rake_task'
 
-task :default => :spec
+  desc 'Provide private interfaces documentation'
+  RSpec::Core::RakeTask.new(:spec)
+
+  namespace :spec do
+    desc 'Provide public interfaces documentation'
+      RSpec::Core::RakeTask.new(:public) do |t|
+      t.rspec_opts = "--tag public"
+    end
+  end
+
+  namespace :spec do
+    desc 'Provide private interfaces documentation for development purpose'
+      RSpec::Core::RakeTask.new(:development) do |t|
+      t.rspec_opts = "--tag protected --tag private"
+    end
+  end
+rescue LoadError
+  desc 'RSpec rake task not available'
+  task :spec do
+    abort 'RSpec rake task is not available. Be sure to install rspec-core as a gem or plugin'
+  end
+end
+
+begin
+  require 'inch/rake'
+
+  Inch::Rake::Suggest.new(:inch) do |suggest|
+    suggest.args << "--private"
+    suggest.args << "--pedantic"
+  end
+rescue LoadError
+   desc 'Inch rake task not available'
+  task :inch do
+    abort 'Inch rake task is not available. Be sure to install inch as a gem or plugin'
+  end
+end
+
+task :default => ['spec:public', 'spec:development', :inch]
