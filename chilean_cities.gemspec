@@ -22,4 +22,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rake", "~> 10.4"
 
   gem.add_development_dependency "rspec", "~> 3.0"
+  gem.add_development_dependency "inch", "~> 0.4.6"
 end

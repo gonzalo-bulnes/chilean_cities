@@ -26,4 +26,18 @@ rescue LoadError
   end
 end
 
-task :default => ['spec:public', 'spec:development']
+begin
+  require 'inch/rake'
+
+  Inch::Rake::Suggest.new(:inch) do |suggest|
+    suggest.args << "--private"
+    suggest.args << "--pedantic"
+  end
+rescue LoadError
+   desc 'Inch rake task not available'
+  task :inch do
+    abort 'Inch rake task is not available. Be sure to install inch as a gem or plugin'
+  end
+end
+
+task :default => ['spec:public', 'spec:development', :inch]
