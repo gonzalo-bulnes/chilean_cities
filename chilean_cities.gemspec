@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
   gem.files = Dir["{doc,lib}/**/*", "Gemfile", "LICENSE.txt", "Rakefile", "README.md"]
   gem.test_files = Dir["spec/**/*"]
 
+  gem.add_dependency "activemodel", ">= 3.2.11", "< 5"
   gem.add_dependency "rake", "~> 10.4"
 
   gem.add_development_dependency "rspec", "~> 3.0"

@@ -1,7 +1,7 @@
 Comunas de Chile
 ================
 
-[![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
+[![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png?branch=master)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
 [![Code Climate](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities.png)](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities)
 [![Dependency Status](https://gemnasium.com/gonzalo-bulnes/chilean_cities.svg)](https://gemnasium.com/gonzalo-bulnes/chilean_cities)
 [![Inline docs](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities.svg?branch=master)](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities)
