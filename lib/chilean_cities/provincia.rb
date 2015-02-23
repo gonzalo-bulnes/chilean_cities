@@ -6,5 +6,6 @@ module ChileanCities
   class Provincia
     include ComunasList
     include RegionPart
+    include Schemas::Place
   end
 end

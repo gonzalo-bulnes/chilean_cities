@@ -6,6 +6,7 @@ module ChileanCities
   class Region
     include ComunasList
     include ProvinciasList
+    include Schemas::Place
 
     attr_reader :iso_3166_2
   end
