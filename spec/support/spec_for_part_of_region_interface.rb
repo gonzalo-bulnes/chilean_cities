@@ -10,7 +10,7 @@ RSpec.shared_examples 'part of a ChileanCities::Region' do
     expect(part_of_region).to respond_to :region=
   end
 
-  describe '#region' do
+  describe '#region', public: true do
 
     it 'returns a ChileanCities::Region' do
       pending 'Not yet implemented.'

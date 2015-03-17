@@ -12,7 +12,7 @@ RSpec.shared_examples 'a list of ChileanCities::Provincia' do
     expect(provincias_list).to respond_to :append_provincia
   end
 
-  describe '#provincias' do
+  describe '#provincias', public: true do
 
     it 'returns a list of ChileanCities::Provincia' do
       pending 'Not yet implemented.'

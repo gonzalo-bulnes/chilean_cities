@@ -10,7 +10,7 @@ RSpec.shared_examples 'a list of ChileanCities::Comuna' do
     expect(comunas_list).to respond_to :append_comuna
   end
 
-  describe '#comunas' do
+  describe '#comunas', public: true do
 
     it 'returns a list of ChileanCities::Comuna' do
       pending 'Not yet implemented.'

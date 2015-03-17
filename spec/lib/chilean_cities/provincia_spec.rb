@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe ChileanCities::Provincia, public: true do
+describe ChileanCities::Provincia do
 
-  describe 'provides a Schema.org interface' do
+  describe 'provides a Schema.org interface', public: true do
     it_behaves_like 'an AdministrativeArea'
   end
 
@@ -16,7 +16,7 @@ describe ChileanCities::Provincia, public: true do
     expect(FactoryGirl.build(:provincia)).to be_valid
   end
 
-  it 'requires a name' do
+  it 'requires a name', private: true do
     expect(FactoryGirl.build(:provincia, name: nil)).not_to be_valid
   end
 end
