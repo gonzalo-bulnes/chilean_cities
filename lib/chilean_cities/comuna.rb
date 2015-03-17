@@ -15,6 +15,13 @@ module ChileanCities
 
     attr_accessor :code
 
+    def initialize(*args)
+      @name = args.shift
+      @code = args.shift
+      @provincia = args.shift
+      @region = args.shift
+    end
+
     validates_presence_of :code, :name
   end
 end

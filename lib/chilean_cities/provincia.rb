@@ -12,6 +12,12 @@ module ChileanCities
     include RegionPart
     include Schemas::Place
 
+    def initialize(*args)
+      @name = args.shift
+      @comunas = []
+      @region = nil
+    end
+
     validates_presence_of :name
   end
 end

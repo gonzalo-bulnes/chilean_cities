@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "activemodel", ">= 3.2.11", "< 5"
   gem.add_dependency "rake", "~> 10.4"
+  gem.add_dependency "multi_json", "~> 1.0"
 
   gem.add_development_dependency "rspec", "~> 3.0"
   gem.add_development_dependency "inch", "~> 0.4.6"

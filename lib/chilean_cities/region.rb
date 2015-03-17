@@ -14,6 +14,12 @@ module ChileanCities
 
     attr_accessor :iso_3166_2
 
+    def initialize(*args)
+      @name = args.shift
+      @comunas = []
+      @provincias = []
+    end
+
     validates_presence_of :iso_3166_2, :name
     validates_format_of :iso_3166_2, with: /\ACL-[A-Z][A-Z]\z/ # ISO 3166-2:CL
   end
