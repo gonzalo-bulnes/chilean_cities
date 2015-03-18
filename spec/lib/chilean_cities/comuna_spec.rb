@@ -51,4 +51,17 @@ describe ChileanCities::Comuna do
       expect(subject.region).to be_instance_of ChileanCities::Region
     end
   end
+
+  describe '#contained_in', data: true, private: true do
+
+    it 'returns a ChileanCities::Provincia' do
+      chile = ChileanCities::Factory.instance
+      chile.generate!
+
+      subject = chile.comunas.sample
+
+      expect(subject.contained_in).not_to be_nil
+      expect(subject.contained_in).to be_instance_of ChileanCities::Provincia
+    end
+  end
 end

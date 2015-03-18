@@ -29,10 +29,10 @@ module ChileanCities
                  Region.new(datum[:region], datum[:region_iso_3166_2])
 
         comuna.region = region
-        comuna.provincia = provincia
+        comuna.provincia = comuna.contained_in = provincia
         @comunas << comuna unless @comunas.include? comuna
 
-        provincia.region = region
+        provincia.region = provincia.contained_in = region
         provincia.append_comuna(comuna)
         @provincias << provincia unless @provincias.include? provincia
 

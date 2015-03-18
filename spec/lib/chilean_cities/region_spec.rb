@@ -57,7 +57,7 @@ describe ChileanCities::Region do
       chile = ChileanCities::Factory.instance
       chile.generate!
 
-      subject = chile.provincias.sample
+      subject = chile.regiones.sample
 
       expect(subject.comunas).not_to be_empty
       expect(subject.comunas.sample).to be_instance_of ChileanCities::Comuna
