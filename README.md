@@ -6,10 +6,9 @@ Comunas de Chile
 [![Dependency Status](https://gemnasium.com/gonzalo-bulnes/chilean_cities.svg)](https://gemnasium.com/gonzalo-bulnes/chilean_cities)
 [![Inline docs](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities.svg?branch=master)](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities)
 
-A Ruby representation of the Chilean _comunas_ as described by the [SUBDERE][subdere].
+A Ruby representation of the Chilean _administrative areas_ as described by the [SUBDERE][subdere].
 
   [subdere]: http://www.subdere.gov.cl
-
 
 Disclaimer
 ----------
@@ -35,20 +34,65 @@ Usage
 
 Add the gem to your Gemfile:
 
-    gem 'chilean_cities', '~> 1.0' # see semver.org
+```ruby
+# Gemfile
 
+gem 'chilean_cities', '~> 1.0' # see semver.org
+```
 
-> I'm not sure yet how the collection of administrative areas will be created and/or persisted.
-> However, I'm thinking that creating a collection of `save`able objects from a source file and providing helpers to persist them would be a way to keep the data accessible (readable and auditable).
+Then generate the chilean administrative areas:
+
+```ruby
+require 'chilean_cities'
+
+chile = ChileanCities::Factory.instance
+
+chile.generate!
+
+# and use them as you want : )
+
+chile.regiones.select{ |region| region.iso_3166_2 == 'CL-LL' }.first.name
+# => "Región de los Lagos"
+
+chile.provincias.select{ |provincia| provincia.name =~ /Magallanes/ }.first.comunas.map{ |comuna| comuna.name }
+# => ["Punta Arenas", "Laguna Blanca", "Río Verde", "San Gregorio"]
+ ```
+
+### Schema.org
+
+ The generated administrative areas representations do _partially_ enforce the **Place schema** (see [schema.org][schema] and [the schemas specs][schema-specs] for details):
+
+```ruby
+# comunas, provincias and regiones do implement the `contained_in` method:
+
+chile.comunas.select{ |comuna| comuna.name == 'Quellón' }.first.contained_in.name
+# => "Chiloé"
+```
+
+  [schema]: http://schema.org
+  [schema-specs]: spec/support/schemas
+
+**Note about the previous version** (`v0.1.0`)
+
+If you were using this gem in the past and are looking for its ancient behaviour, please modify your `Gemfile` to checkout the `v0.1.0` tag:
+
+```ruby
+# Gemfile
+
+gem 'chilean_cities', git: 'https://github.com/gonzalo-bulnes/chilean_cities.git', tag: 'v0.1.0'
+```
+The same tag does also [point to the corresponding documentation][deprecated-doc].
+
+  [deprecated-doc]: https://github.com/gonzalo-bulnes/chilean_cities/blob/v0.1.0/README.md
 
 See Also
 --------
 
-- [ISO 3166-2][iso]
+- The Wikipedia article about the [ISO 3166-2][iso] standard
 - Comunas de Chile ([gist][json]) (a Ruby on Rails seed and a JSON document)
-- the Schema.org [AdministrativeArea schema][schema]
-- an interesting overview of [how the administrative areas can be categorized for mapping][administrative_mapping]
-- the [OpenStreetMap relations][osm_boundaries] corresponding to the described administrative areas
+- The Schema.org [AdministrativeArea schema][schema]
+- An interesting overview of [how the administrative areas can be categorized for mapping][administrative_mapping]
+- The [OpenStreetMap relations][osm_boundaries] corresponding to the described administrative areas
 
   [iso]: https://en.wikipedia.org/wiki/ISO_3166-2:CL
   [json]: https://gist.github.com/gonzalo-bulnes/337ea1e916e3890fdefa
@@ -59,14 +103,14 @@ See Also
 Credits
 -------
 
-Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs][acidlabs]. Thanks for that!
+Part of this gem was crafted during my 10% _free focus_ work time at [Acid Labs][acidlabs]. Thanks @acidlabs!
 
   [acidlabs]: https://github.com/acidlabs
 
 License
 -------
 
-    ChileanCities provides a Ruby representation of the Chilean _comunas_.
+    ChileanCities provides a Ruby representation of the Chilean _administrative areas_.
     Copyright (C) 2013, 2014, 2015  Gonzalo Bulnes Guilpain
 
     This program is free software: you can redistribute it and/or modify
