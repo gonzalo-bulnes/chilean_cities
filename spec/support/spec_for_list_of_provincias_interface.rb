@@ -12,17 +12,6 @@ RSpec.shared_examples 'a list of ChileanCities::Provincia' do
     expect(provincias_list).to respond_to :append_provincia
   end
 
-  describe '#provincias', public: true do
-
-    it 'returns a list of ChileanCities::Provincia' do
-      pending 'Not yet implemented.'
-      expect(provincias_list.provincias).not_to be_empty
-      provincias_list.provincias.each do |provincia|
-        expect(provincia).to be_instance_of ChileanCities::Provincia
-      end
-    end
-  end
-
   describe '#append_provincia', private: true do
 
     it 'appends the provincia to the provincias list if not already present' do

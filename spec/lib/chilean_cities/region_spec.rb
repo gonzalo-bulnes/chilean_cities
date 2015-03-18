@@ -37,4 +37,30 @@ describe ChileanCities::Region do
     expect(FactoryGirl.build(:region, iso_3166_2: 'ACL-AN')).not_to be_valid
     expect(FactoryGirl.build(:region, iso_3166_2: 'AL-AN')).not_to be_valid
   end
+
+  describe '#provincias', data: true, private: true do
+
+    it 'returns a list of ChileanCities::Provincia' do
+      chile = ChileanCities::Factory.instance
+      chile.generate!
+
+      subject = chile.regiones.sample
+
+      expect(subject.provincias).not_to be_empty
+      expect(subject.provincias.sample).to be_instance_of ChileanCities::Provincia
+    end
+  end
+
+  describe '#comunas', data: true, private: true do
+
+    it 'returns a list of ChileanCities::Comuna' do
+      chile = ChileanCities::Factory.instance
+      chile.generate!
+
+      subject = chile.provincias.sample
+
+      expect(subject.comunas).not_to be_empty
+      expect(subject.comunas.sample).to be_instance_of ChileanCities::Comuna
+    end
+  end
 end
