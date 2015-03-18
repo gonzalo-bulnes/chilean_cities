@@ -16,6 +16,7 @@ module ChileanCities
 
     def initialize(*args)
       @name = args.shift
+      @iso_3166_2 = args.shift
       @comunas = []
       @provincias = []
     end

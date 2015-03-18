@@ -26,7 +26,7 @@ module ChileanCities
                     Provincia.new(datum[:provincia])
 
         region = @regiones.select { |region| region.name == datum[:region] }.first ||
-                 Region.new(datum[:region])
+                 Region.new(datum[:region], datum[:region_iso_3166_2])
 
         comuna.region = region
         comuna.provincia = provincia
@@ -38,7 +38,6 @@ module ChileanCities
         region.append_comuna(comuna)
         region.append_provincia(provincia)
         @regiones << region unless @regiones.include? region
-
       end
       { comunas_count: @comunas.count, provincias_count: @provincias.count, regiones_count: @regiones.count }
     end
