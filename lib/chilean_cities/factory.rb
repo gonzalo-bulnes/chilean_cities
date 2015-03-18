@@ -32,6 +32,7 @@ module ChileanCities
         comuna.provincia = provincia
         @comunas << comuna unless @comunas.include? comuna
 
+        provincia.region = region
         provincia.append_comuna(comuna)
         @provincias << provincia unless @provincias.include? provincia
 

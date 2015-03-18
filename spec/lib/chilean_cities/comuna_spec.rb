@@ -25,4 +25,30 @@ describe ChileanCities::Comuna do
   it 'requires a code', private: true do
     expect(FactoryGirl.build(:comuna, code: nil)).not_to be_valid
   end
+
+  describe '#provincia', data: true, private: true do
+
+    it 'returns a ChileanCities::Provincia' do
+      chile = ChileanCities::Factory.instance
+      chile.generate!
+
+      subject = chile.comunas.sample
+
+      expect(subject.provincia).not_to be_nil
+      expect(subject.provincia).to be_instance_of ChileanCities::Provincia
+    end
+  end
+
+  describe '#region', data: true, private: true do
+
+    it 'returns a ChileanCities::Region' do
+      chile = ChileanCities::Factory.instance
+      chile.generate!
+
+      subject = chile.comunas.sample
+
+      expect(subject.region).not_to be_nil
+      expect(subject.region).to be_instance_of ChileanCities::Region
+    end
+  end
 end
