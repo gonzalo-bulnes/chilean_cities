@@ -15,7 +15,7 @@ module ChileanCities
       @provincias = []
       @comunas = []
 
-      data_file = File.read('data/comunas.json')
+      data_file = File.read(File.dirname(__FILE__) + '/../../data/comunas.json')
 
       data = MultiJson.load(data_file, symbolize_keys: true)
 

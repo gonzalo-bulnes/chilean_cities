@@ -1423,174 +1423,6 @@
         "region_iso_3166_2": "CL-BI"
     },
     {
-        "name": "Chillán",
-        "code": "08401",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Bulnes",
-        "code": "08402",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Cobquecura",
-        "code": "08403",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Coelemu",
-        "code": "08404",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Coihueco",
-        "code": "08405",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Chillán Viejo",
-        "code": "08406",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "El Carmen",
-        "code": "08407",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Ninhue",
-        "code": "08408",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Ñiquén",
-        "code": "08409",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Pemuco",
-        "code": "08410",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Pinto",
-        "code": "08411",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Portezuelo",
-        "code": "08412",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Quillón",
-        "code": "08413",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Quirihue",
-        "code": "08414",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Ránquil",
-        "code": "08415",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "San Carlos",
-        "code": "08416",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "San Fabián",
-        "code": "08417",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "San Ignacio",
-        "code": "08418",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "San Nicolás",
-        "code": "08419",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Treguaco",
-        "code": "08420",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
-        "name": "Yungay",
-        "code": "08421",
-        "provincia": "Ñuble",
-        "region": "Región del Biobío",
-        "region_number": "VIII",
-        "region_iso_3166_2": "CL-BI"
-    },
-    {
         "name": "Temuco",
         "code": "09101",
         "provincia": "Cautín",
@@ -1703,7 +1535,7 @@
         "region_iso_3166_2": "CL-AR"
     },
     {
-        "name": "Pucó",
+        "name": "Pucón",
         "code": "09115",
         "provincia": "Cautín",
         "region": "Región de la Araucanía",
@@ -2764,5 +2596,173 @@
         "region": "Región Metropolitana de Santiago",
         "region_number": "XIII",
         "region_iso_3166_2": "CL-RM"
+    },
+    {
+        "name": "Chillán",
+        "code": "16101",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Bulnes",
+        "code": "16102",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Chillán Viejo",
+        "code": "16103",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "El Carmen",
+        "code": "16104",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Pemuco",
+        "code": "16105",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Pinto",
+        "code": "16106",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Quillón",
+        "code": "16107",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "San Ignacio",
+        "code": "16108",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Yungay",
+        "code": "16109",
+        "provincia": "Diguillín",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Quirihue",
+        "code": "16201",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Cobquecura",
+        "code": "16202",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Coelemu",
+        "code": "16203",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Ninhue",
+        "code": "16204",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Portezuelo",
+        "code": "16205",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Ránquil",
+        "code": "16206",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Treguaco",
+        "code": "16207",
+        "provincia": "Itata",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "San Carlos",
+        "code": "16301",
+        "provincia": "Punilla",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Coihueco",
+        "code": "16302",
+        "provincia": "Punilla",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "Ñiquén",
+        "code": "16303",
+        "provincia": "Punilla",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "San Fabián",
+        "code": "16304",
+        "provincia": "Punilla",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
+    },
+    {
+        "name": "San Nicolás",
+        "code": "16305",
+        "provincia": "Punilla",
+        "region": "Región de Ñuble",
+        "region_number": "XVI",
+        "region_iso_3166_2": "CL-NB"
     }
 ]
