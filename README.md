@@ -24,6 +24,7 @@ This library is based on the publicly available information from the SUBDERE rel
 - Decreto Supremo No 1352, del Ministerio del Interior, publicado en el Diario Oficial del 23 de Agosto de 2008
 - Decreto Exento No 910, del Ministerio del Interior, publicado en el Diario Oficial del 14 de Junio de 2007
 - Decreto Exento No 817, del Ministerio del Interior, publicado en el Diario Oficial del 26 de Marzo de 2010
+- Decreto Exento No 204, del Ministerio del Interior, publicado en el Diario Oficial del 14 de Febrero de 2018
 
   [source]: http://www.subdere.gov.cl/documentacion/regiones-provincias-y-comunas-de-chile
   [ref]: http://www.subdere.gov.cl/sites/default/files/documentos/articles-73111_recurso_2.pdf
