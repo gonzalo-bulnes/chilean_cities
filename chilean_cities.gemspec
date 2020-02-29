@@ -14,13 +14,13 @@ Gem::Specification.new do |gem|
                          as described by the Subsecretaría de Desarrollo Regional
                          y Administrativo.}
   gem.homepage      = "https://github.com/gonzalo-bulnes/chilean_cities"
-  gem.license         = "GPLv3"
+  gem.license         = "GPL-3.0"
 
   gem.files = Dir["{doc,lib}/**/*", "Gemfile", "LICENSE.txt", "Rakefile", "README.md"]
   gem.test_files = Dir["spec/**/*"]
 
-  gem.add_dependency "activemodel", ">= 3.2.11", "< 5"
-  gem.add_dependency "rake", "~> 10.4"
+  gem.add_dependency "activemodel", ">= 3.2.11", "< 7"
+  gem.add_dependency "rake"
   gem.add_dependency "multi_json", "~> 1.0"
 
   gem.add_development_dependency "rspec", "~> 3.0"

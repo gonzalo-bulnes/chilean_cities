@@ -1,9 +1,9 @@
 Comunas de Chile
 ================
 
+[![Gem Version](https://badge.fury.io/rb/chilean_cities.svg)](http://badge.fury.io/rb/chilean_cities)
 [![Build Status](https://api.travis-ci.org/gonzalo-bulnes/chilean_cities.png?branch=master)](https://travis-ci.org/gonzalo-bulnes/chilean_cities)
 [![Code Climate](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities.png)](https://codeclimate.com/github/gonzalo-bulnes/chilean_cities)
-[![Dependency Status](https://gemnasium.com/gonzalo-bulnes/chilean_cities.svg)](https://gemnasium.com/gonzalo-bulnes/chilean_cities)
 [![Inline docs](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities.svg?branch=master)](http://inch-ci.org/github/gonzalo-bulnes/chilean_cities)
 
 A Ruby representation of the Chilean _administrative areas_ as described by the [SUBDERE][subdere].
@@ -27,7 +27,6 @@ This library is based on the publicly available information from the SUBDERE rel
 
   [source]: http://www.subdere.gov.cl/documentacion/regiones-provincias-y-comunas-de-chile
   [ref]: http://www.subdere.gov.cl/sites/default/files/documentos/articles-73111_recurso_2.pdf
-
 
 Usage
 -----
@@ -74,7 +73,7 @@ chile.comunas.select{ |comuna| comuna.name == 'Quellón' }.first.contained_in.na
 
 **Note about the previous version** (`v0.1.0`)
 
-If you were using this gem in the past and are looking for its ancient behaviour, please modify your `Gemfile` to checkout the `v0.1.0` tag:
+If you were using this gem in the past and are looking for its ancient behaviour, please modify your `Gemfile` to checkout the `v0.1.0` tag (it's been a few years, so this is not recommended):
 
 ```ruby
 # Gemfile
@@ -84,6 +83,13 @@ gem 'chilean_cities', git: 'https://github.com/gonzalo-bulnes/chilean_cities.git
 The same tag does also [point to the corresponding documentation][deprecated-doc].
 
   [deprecated-doc]: https://github.com/gonzalo-bulnes/chilean_cities/blob/v0.1.0/README.md
+
+Code of Conduct
+---------------
+
+Please note that by participating in this project, you agree to abide by its [code of conduct]. That is true for pull requests, and also when participating in issues.
+
+[code of conduct]: ./CODE_OF_CONDUCT.md
 
 See Also
 --------
@@ -111,7 +117,7 @@ License
 -------
 
     ChileanCities provides a Ruby representation of the Chilean _administrative areas_.
-    Copyright (C) 2013, 2014, 2015  Gonzalo Bulnes Guilpain
+    Copyright (C) 2013, 2020 Gonzalo Bulnes Guilpain
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
