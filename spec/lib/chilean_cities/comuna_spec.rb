@@ -15,15 +15,15 @@ describe ChileanCities::Comuna do
   # validations
 
   it 'has a valid factory', private: true do
-    expect(FactoryGirl.build(:comuna)).to be_valid
+    expect(build(:comuna)).to be_valid
   end
 
   it 'requires a name', private: true do
-    expect(FactoryGirl.build(:comuna, name: nil)).not_to be_valid
+    expect(build(:comuna, name: nil)).not_to be_valid
   end
 
   it 'requires a code', private: true do
-    expect(FactoryGirl.build(:comuna, code: nil)).not_to be_valid
+    expect(build(:comuna, code: nil)).not_to be_valid
   end
 
   describe '#provincia', data: true, private: true do

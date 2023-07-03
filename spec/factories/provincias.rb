@@ -1,9 +1,5 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :provincia, class: ChileanCities::Provincia do
-    name 'Arica'
-  end
-
-  factory :invalid_provincia, class: ChileanCities::Provincia do
-    # nop
+    name { 'Arica' }
   end
 end

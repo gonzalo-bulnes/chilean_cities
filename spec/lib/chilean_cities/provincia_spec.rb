@@ -13,11 +13,11 @@ describe ChileanCities::Provincia do
   # validations
 
   it 'has a valid factory', private: true do
-    expect(FactoryGirl.build(:provincia)).to be_valid
+    expect(build(:provincia)).to be_valid
   end
 
   it 'requires a name', private: true do
-    expect(FactoryGirl.build(:provincia, name: nil)).not_to be_valid
+    expect(build(:provincia, name: nil)).not_to be_valid
   end
 
   describe '#comunas', data: true, private: true do

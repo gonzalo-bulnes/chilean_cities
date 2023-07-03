@@ -1,10 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :comuna, class: ChileanCities::Comuna do
-    code 15102
-    name 'Camarones'
-  end
-
-  factory :invalid_comuna, class: ChileanCities::Comuna do
-    # nop
+    code { 15102 }
+    name { 'Camarones' }
   end
 end

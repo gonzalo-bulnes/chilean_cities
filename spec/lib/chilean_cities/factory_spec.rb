@@ -15,7 +15,7 @@ describe ChileanCities::Factory do
   describe '#generate!', public: true do
 
     it 'generates Comuna, Provincia and Region objects from the data' do
-      expect(subject.generate!).to eq({ comunas_count: 346, provincias_count: 54, regiones_count: 15 })
+      expect(subject.generate!).to eq({ comunas_count: 346, provincias_count: 56, regiones_count: 16 })
     end
 
     describe 'generates a collection of' do
