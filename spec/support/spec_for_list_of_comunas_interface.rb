@@ -13,7 +13,7 @@ RSpec.shared_examples 'a list of ChileanCities::Comuna' do
   describe '#append_comuna', private: true do
 
     it 'appends the comuna to the comunas list if not already present' do
-      comuna = FactoryGirl.build(:comuna)
+      comuna = build(:comuna)
       expect{ comunas_list.append_comuna(comuna) }.to change{
         comunas_list.comunas
       }.from([]).to([comuna])

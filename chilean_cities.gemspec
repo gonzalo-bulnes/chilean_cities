@@ -25,5 +25,5 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "rspec", "~> 3.0"
   gem.add_development_dependency "inch", "~> 0.4.6"
-  gem.add_development_dependency "factory_girl", "~> 4.5"
+  gem.add_development_dependency "factory_bot"
 end

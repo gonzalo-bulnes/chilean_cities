@@ -15,7 +15,7 @@ RSpec.shared_examples 'a list of ChileanCities::Provincia' do
   describe '#append_provincia', private: true do
 
     it 'appends the provincia to the provincias list if not already present' do
-      provincia = FactoryGirl.build(:provincia)
+      provincia = build(:provincia)
       expect{ provincias_list.append_provincia(provincia) }.to change{
         provincias_list.provincias
       }.from([]).to([provincia])
